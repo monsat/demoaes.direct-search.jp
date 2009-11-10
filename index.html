@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>インプラント自動見積り[デモサイト]</title>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/jquery.simpledialog.0.1.js"></script>
+<script type="text/javascript" src="./js/jquery.hovertip-1.0.js"></script>
+<script type="text/javascript" src="./plugins/jquery.implant-aes/js/jquery.ds_implant.js"></script>
+<link rel="stylesheet" href="./css/main.css" type="text/css" />
+<link rel="stylesheet" href="./plugins/jquery.implant-aes/css/jquery.ds_implant.css" type="text/css" />
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<h1><a href="/" title="インプラント">インプラント自動見積り[デモサイト]</a></h1>
+		<h2 class="clinic">開発：<a href="http://www.direct-search.jp/" target=_blank title="株式会社ダイレクトサーチジャパン">株式会社ダイレクトサーチジャパン</a></h2>
+	</div>
+	<div id="main">
+		<div id="implant_box">
+			<div class="implant_box_wrapper clearfix">
+				<div class="teeth_box implant_box_left">
+					<div class="action_title">1. 喪失した歯を選択</div>
+					<div class="upper"><div class="selectall select_all_uppers">上あご</div></div>
+					<div class="bottom"><div class="selectall select_all_bottoms">下あご</div></div>
+				</div>
+				<div class="selected_teeth_box implant_box_left">
+					<div class="action_title">2. 確定ボタン</div>
+					<div id="complete_select_teeth" class="action_button">歯の選択を確定する</div>
+					<div class="teeth_list"></div>
+				</div>
+				<div class="clinic_box implant_box_left">
+					<p class="clinic_name"><a href="http://aes.direct-search.jp/" title="インプラント自動見積りシステム">インプラント自動見積りシステム</a></p>
+					<p class="clinic_body">
+						『患者さんが安心して治療に臨めます』<br />
+						<strong>インプラント自動見積りシステム</strong>を貴院のWebサイトにも導入しませんか？<br />
+					</p>
+					<div class="tel_box">
+						<p class="tel">03-6426-2191</p>
+						<p>Webマネジメント担当まで</p>
+					</div>
+					<address>
+						東京都中央区日本橋兜町19-5<br />
+						協栄兜町ビル2F
+					</address>
+				</div>
+			</div>
+			<div class="plan_box implant_box_right">
+				<div class="action_title">3. 料金プランを選択</div>
+				<div class="action_subtitle">料金プラン（リンクをクリックすると料金プランが選択されます）</div>
+				<div class="all_plans_box"></div>
+				<div class="action_subtitle">▼ 料金プランを選択してください ▼</div>
+				<div class="enable_plans_box"></div>
+			</div>
+			<div class="operation_box implant_box_right">
+				<div class="action_title">4. 治療にかかわる項目を選択</div>
+				<div class="action_subtitle">必要な項目にチェックを入れてください（任意）</div>
+				<div class="operation_forms_box"></div>
+			</div>
+			<div class="action_box implant_box_wide">
+				<div class="action_title">5. 注意事項と利用規約をよくお読みのうえ、自動見積り実行をクリックしてください</div>
+				<div id="implant_box_action" class="action_button">利用規約に同意して 自動見積り実行結果を見る</div>
+				<div class="terms">
+					
+				</div>
+			</div>
+			<div class="result_box"></div>
+			<div class="notes_box implant_box_wide">
+				<div class="title">注意事項</div>
+				<p>
+					このデモサイトは、歯科医院のWebサイトを運営している方を対象に、インプラント自動見積りシステムの導入を検討していただくためにご提供しています。<br />
+					掲載している治療料金は「すべて架空のもの」であり、実際にこの料金で治療を受けられるということを保証いたしません。あらかじめご了承ください。<br />
+				</p>
+				<p>
+					このプログラムはMITライセンスのもとオープンソースで公開されています。<br />
+					Webサイト構築のできる方であれば、MITライセンスをお守りいただければどなたでもご利用いただくことが可能です。<br />
+				</p>
+				<p>
+					ただし、当デモサイトで使用されるデザインやヘッダーで使用しているインプラントの画像等を許可無く利用することはできません。<br />
+				</p>
+				<p>
+					治療にかかる費用等は柔軟にカスタマイズ可能ですので、貴院の料金体系に沿った見積りの表示が可能です。<br />
+				</p>
+			</div>
+			<div class="terms_box implant_box_wide">
+				<div class="title">利用規約</div>
+				<div class="terms_body">
+					<p>
+						第一条<br />
+						当コンテンツは、当システムの導入を検討している方を対象に、導入後のイメージを把握していただく目的で提供しています。<br />
+						目的内の使用であればどなたでも無料で利用することが可能です。<br />
+					</p>
+					<p>
+						第二条<br />
+						利用者は、当ページ内の1-5のステップを踏み、最終ステップにおける実行ボタンをクリックすることで治療料金例を表示させることができます。<br />
+						上記の実行ボタンをクリックしたことで、当利用規約に同意したものとします。<br />
+						利用者が当コンテンツを利用して得られる見積り料金を含むすべての情報は、あくまで参考として提供されるものであり、料金相場等を表しているものではありません。<br />
+					</p>
+					<p>
+						第三条<br />
+						利用者はいかなる理由であっても、次に述べる行為をしてはならないものとします。<br />
+						違反者には当院が別途定める金額および損害賠償の金額をお支払いただきます。<br />
+					</p>
+					<ul>
+						<li>当ページを利用し第三者のデータを不正に入手する行為</li>
+						<li>当ページを利用し第三者に被害を与える行為</li>
+						<li>その他当ページ上で禁止している一切の行為</li>
+					</ul>
+					<p>
+						第四条<br />
+						当ページでは住所・氏名・電話番号・メールアドレスをはじめとした個人情報を一切保存していません。<br />
+						しかしながらサービスの改善およびリサーチを目的として、個人情報以外の情報を収集する場合があります。
+					</p>
+					<p>
+						第五条<br />
+						利用者は、(1)当コンテンツを利用したこと、または利用ができなかったこと(2)利用者の送信（発信）やデータへの不正アクセスや不正な改変がなされたこと(3)その他当コンテンツに関連する事項に起因または関連して生じた一切の損害について、当サイト運営者が賠償責任を負わないことに同意します。
+					</p>
+				</div>
+			</div>
+			<div class="result_notes_box">
+				<div class="title">注意事項の例</div>
+				<p>
+					この自動見積りの内容はあくまで<strong>予算のご参考</strong>としてご利用いただくものです。<br />
+					ここに記載された内容による治療をお約束しているわけではございません。<br />
+				</p>
+				<p>
+					見積り料金に幅がある場合、料金はインプラントの埋入本数により決まります。<br />
+					埋入に必要なインプラントの本数は、あなたのあごの骨の状態によって違います。<br />
+					診断やCT撮影の結果により、<strong>表示された本数と異なってくるケースもございます</strong>ので、あらかじめご了承ください。<br />
+				</p>
+				<p>
+					また、<strong>骨の状態により、GBR等の骨造成手術が別途必要になる方もいます。</strong><br />
+					手術の判断は、CT撮影による診断結果によってはじめて判明します。<br />
+					そのため、この見積りでは考慮されていないことをご了承ください。<br />
+				</p>
+				<p>
+					手術後半年間の最初のメンテナンスは、料金に含まれます。<br />
+					その後は4ヶ月～半年に1回の定期健診が別途必要です。<br />
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="footer">&copy; 2009 <a href="http://implant.daijiten.info/" title="インプラント" target=_blank>インプラント大事典</a> <a href="http://www.direct-search.jp/" title="Direct Search Jp Inc." target=_blank>Direct Search Jp Inc.</a></div>
+</div>
+</body>
+</html>

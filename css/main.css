@@ -1,0 +1,108 @@
+html {margin:0;padding:0;background:#ccc url(../images/bg-w2g.gif) repeat-x;}
+body {margin:0;padding:0;font-size:62.5%;text-align:center;}
+a {color:#33e;}
+a:hover {text-decoration:none;color:#66e;}
+#wrapper{width:800px;margin:0 auto;padding:10px;background: url(../images/bg-implant-400-256.gif) 40px -40px no-repeat;text-align:left;font-size:1.4em;line-height:1.5;color:#333;}
+#header{position:relative;height:128px;color:#666;}
+#header h1 ,#header h2{margin:0;padding:0;font-size:14px;font-weight:normal;line-height:16px;}
+#header h1 a ,#header h2 a{color:#666;text-decoration:none;}
+#header h1 a:hover ,#header h2 a:hover{text-decoration:underline;}
+#header h1 a{padding-left:16px;background:url('../images/calculator.gif') left center no-repeat;}
+#header h2.clinic {position:absolute;bottom:0;right:0;}
+#main{
+	padding:10px;
+	border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;
+	border:1px solid #eee;
+	background-color:#fff;
+}
+#footer{margin:10px 0;padding:.5em;color:#666;text-align:center;}
+#footer a{color:#666;text-decoration:none;}
+#footer a:hover{text-decoration:underline;}
+#header , #footer{}
+
+
+.textLight {color:#666;}
+.notBold {font-weight:normal;}
+/* -----------------------------------------------
+	ClearFix
+----------------------------------------------- */
+div.clearfix {overflow: hidden;}
+* html div.clearfix {height: 1%;}
+
+/* -----------------------------------------------
+	jQuery Simple Dialog
+----------------------------------------------- */
+.sd_container{
+	font-size:1.4em;
+	text-align:left;
+	margin:0;
+	padding: 15px;
+	position: absolute;
+	background-color: #fff;
+	border: solid 1px #ccc;
+	border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px;
+	color: #333;
+}
+.sd_header{
+	font-size: 125%;
+	font-weight:bold;
+	margin-bottom: 10px;
+	color: #ff0000;
+}
+.sd_content{}
+.sd_footer{
+	color: #a0a0a0;
+	margin-top: 10px;
+}
+.sd_overlay{
+	position: absolute;
+	margin:0;
+	padding: 0;
+	top: 0;
+	left: 0;
+	background-color: #222;
+}
+.sd_loading{
+	background: url('indicator.gif') center no-repeat;
+	background-color: #fff;
+	height: 60px;
+	width: 60px;
+}
+.sd_closelabel{
+	position:absolute;
+	width:50px;
+	height:22px;
+	line-height:22px;
+	top:0;
+	left:0;
+	padding:5px;
+	text-align:center;
+	border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+	background-color:#eee;
+}
+.sd_closelabel a {
+	text-decoration:none;
+	color: #222;
+	font-size: 12px;
+	font-weight:bold;
+}
+
+/* -----------------------------------------------
+	jQuery Hover Tip
+----------------------------------------------- */
+.hovertip {
+	position: absolute;
+	padding: 10px 10px;
+	z-index: 2;
+	max-width: 300px;
+
+	color: #333;
+	background-color: #f5f5b5;
+	border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px;
+	border: 1px solid #DECA7E;
+
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+}
+* html .hovertip {width: 300px;}
